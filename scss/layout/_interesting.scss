@@ -1,0 +1,81 @@
+@use "../variables/colors";
+@use "../components/buttons";
+@use "../mixins/mobile";
+@use "../mixins/text";
+
+.interesting {
+  padding: 204px 0px 173px 0px;
+}
+.container {
+}
+.interesting__wrapper {
+  // position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.interesting__info {
+  width: 491px;
+  padding-top: 37px;
+}
+.interesting__title {
+  margin-top: 37px;
+}
+
+.interesting__br {
+  display: none;
+}
+.interesting__desc {
+  margin-top: 21px;
+  text-align: left;
+}
+.interesting__btn {
+  margin-top: 25px;
+}
+.btn {
+}
+
+.interesting__imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgs-wrapper {
+  width: 577px;
+  height: 395px;
+  position: relative;
+  // border: 1px solid red;
+}
+.interesting__img {
+}
+
+.interesting__img-1 {
+  position: absolute;
+  bottom: 15px;
+  left: 0px;
+  z-index: 4;
+
+  &::before {
+    position: absolute;
+    content: url("../../assets/icons/blue-dotted-rectangle-icon.svg");
+    top: -35px;
+    left: -19px;
+    z-index: -1;
+  }
+}
+
+.interesting__img-2 {
+  position: absolute;
+  bottom: 106px;
+  left: 293px;
+
+  z-index: 3;
+
+  &::after {
+    position: absolute;
+    content: url("../../assets/icons/long-red-dotted-rectangle.svg");
+    bottom: -71px;
+    left: 0px;
+    z-index: -1;
+  }
+}

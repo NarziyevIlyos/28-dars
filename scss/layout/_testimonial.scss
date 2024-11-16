@@ -1,0 +1,76 @@
+@use "../variables/colors";
+@use "../components/buttons";
+@use "../mixins/mobile";
+@use "../mixins/text";
+
+.testimonial {
+  margin-top: 141px;
+  padding-bottom: 43px;
+
+  //   border: 2px solid red;
+
+  .container {
+  }
+
+  .testimonial__wrapper {
+    position: relative;
+    // border: 2px solid purple;
+
+    &::before {
+      position: absolute;
+      content: url("../../assets/icons/blue-dotted-rectangle-icon.svg");
+      top: -35px;
+      left: 100.6px;
+      z-index: 3;
+      transform: rotate(14deg);
+    }
+    &::after {
+      position: absolute;
+      content: url("../../assets/icons/blue-dotted-rectangle-icon.svg");
+      bottom: -43px;
+      right: -35px;
+      z-index: -1;
+      transform: rotate(14deg);
+    }
+  }
+}
+
+.testimonial__sub-title {
+  margin-top: 55px;
+  text-align: center;
+}
+.sub-title {
+}
+.testimonial__title {
+  text-align: center;
+}
+.testimonial__cards {
+  margin-top: 50px;
+  display: flex;
+  gap: 50px;
+
+  .card {
+    width: 380px;
+    padding: 49px 35px 107px 35px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 24px 0px #0000000d;
+  }
+  .card__header {
+    display: flex;
+    align-items: center;
+  }
+  .card__header-img {
+    margin-right: 30px;
+  }
+  .card__header__person-info {
+  }
+  .card__header__person-info__name {
+  }
+  .card__header__person-info__profession {
+  }
+  .card__body {
+  }
+  .card__body-info {
+    text-align: left;
+  }
+}

@@ -1,0 +1,57 @@
+@use "../variables/colors";
+@use "../components/buttons";
+@use "../mixins/mobile";
+@use "../mixins/text";
+
+.our-portfolio {
+  padding: 130px 0px 53px;
+  // border: 1px solid black;
+}
+.container {
+}
+.our-portfolio__sub-title {
+  text-align: center;
+}
+.sub-title {
+}
+.our-portfolio__title {
+  text-align: center;
+}
+.our-portfolio__desc {
+  margin-top: 28px;
+  text-align: center;
+  margin: 0 auto;
+  width: 674px;
+}
+.our-portfolio__cards {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+
+  .card {
+    position: relative;
+    width: 350px;
+
+  }
+  .card__title {
+    position: absolute;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.003em;
+    color: $white;
+
+    bottom: 50px;
+    left: 24px;
+  }
+}
+
+.our-portfolio__btn {
+    display: block;
+    margin: 34px auto 0px;
+   
+}
+.btn {
+}
+.btn-white {
+}

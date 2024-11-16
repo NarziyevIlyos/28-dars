@@ -1,0 +1,42 @@
+@use "../variables/colors";
+@use "../components/buttons";
+@use "../mixins/mobile";
+@use "../mixins/text";
+
+.header {
+  padding: 72px 0px 0px 0px;
+}
+.nav {
+}
+.container {
+}
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo {
+}
+.nav__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.nav__link {
+  font-family: Quicksand;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: $primary-color;
+}
+
+.nav__hamburger {
+  display: none;
+}
+.text {
+}
+.nav__btn {
+}
+
